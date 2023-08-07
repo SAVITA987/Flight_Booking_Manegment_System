@@ -19,27 +19,21 @@
   <ul>
     <li>
       <strong>User Authentication</strong>
-   
-    </li>
+   </li>
     <li>
       <strong>Insert,Update,Delete,Create Record</strong>
-  
-    </li>
+  </li>
      <li>
       <strong>Search Flights</strong>
-  
-    </li>
+ </li>
     <li>
       <strong>Ticket Booking</strong>
-  
-    </li>
+ </li>
     <li>
       <strong>Pyment Details</strong>
-   
-    </li>
+   </li>
        <li>
       <strong>View Flight Booking</strong>
-   
-    </li>
+   </li>
   </ul>
 </body>
