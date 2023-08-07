@@ -1,0 +1,43 @@
+mysql> use flight_db;
+Database changed
+mysql> show tables;
++------------------------+
+| Tables_in_flight_db    |
++------------------------+
+| booking                |
+| booking_paymentdetails |
+| flight00               |
+| users                  |
++------------------------+
+4 rows in set (0.01 sec)
+
+mysql> select * from flight00;
++-----------+---------------+----------------+--------------+----------------+--------------+-------+
+| flight_id | flight_number | departure_city | arrival_city | departure_time | arrival_time | price |
++-----------+---------------+----------------+--------------+----------------+--------------+-------+
+|        10 |           278 | Nanded         | Dehli        | 11:00:20       | 12:20:30     |  4000 |
+|        11 |           235 | Mumbai         | pune         | 12:00:34       | 11:20:60     |  6000 |
+|        12 |           340 | Nashik         | Solapur      | 02:34:00       | 03:56:00     |  3450 |
+|        13 |           200 | pune           | mumbai       | 03:00:00       | 04:00:00     |  7000 |
++-----------+---------------+----------------+--------------+----------------+--------------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from booking;
++-----------+---------------+----------------+------------------+--------------+--------+
+| flight_id | flight_number | passenger_name | passenger_email  | booking_date | status |
++-----------+---------------+----------------+------------------+--------------+--------+
+|        11 |           231 | disha          | disha@gmail.com  | 29-11-2023   | yes    |
+|        10 |           278 | Adhi           | adi@gmail.com    | 15-10-2023   | yes    |
+|        13 |           200 | raj            | raj@gmail.com    | 11-12-2023   | yes    |
+|        12 |           340 | Savita         | savita@gmail.com | 12-09-2023   | yes    |
++-----------+---------------+----------------+------------------+--------------+--------+
+4 rows in set (0.00 sec)
+
+mysql> select * from booking_paymentdetails;
++------------------+-------------+-----+-------------+
+| card_holder_name | card_number | cvv | expiry_date |
++------------------+-------------+-----+-------------+
+| Savita Tekale    | 45673267    | 345 | 12/23       |
+| raj              | 34567898    | 234 | 12/11       |
++------------------+-------------+-----+-------------+
+2 rows in set (0.19 sec)
